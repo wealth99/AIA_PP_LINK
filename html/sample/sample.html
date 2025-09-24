@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title>AIA PP</title>
+        <link rel="stylesheet" href="/assets/css/ui-common.css">
+    </head>
+
+    <body>
+        <div id="wrap">
+            <!-- skip link -->
+            <div class="skip-link">
+                <a href="#header">주메뉴 바로가기</a>
+                <a href="#contents">본문 바로가기</a>
+                <a href="#footer">하단메뉴 바로가기</a>
+            </div>
+            <!-- // skip link -->
+            <!-- Header -->
+            <header id="header">
+                <h1>
+                    <a href="#" class="logo">
+                        <img src="/assets/images/common/logo.png" alt="AIA 프리미어파트너스">
+                    </a>
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">소개</a></li>
+                        <li><a href="#">비지니스</a></li>
+                        <li><a href="#">맨파워</a></li>
+                        <li><a href="#">career</a></li>
+                        <li><a href="#">미디어센터</a></li>
+                        <li><a href="#" class="support">지원하기</a></li>
+                    </ul>
+                    <button type="button" class="menu">메뉴</button>
+                </nav>
+            </header>
+            <!-- // Header -->
+            <style>
+                #header {
+                    display: none;
+                }
+
+                .tab-container,
+                .accordion-container {
+                    max-width: 650px;
+                    margin: 30px auto;
+                }
+
+                .trigger-button-container {
+                    margin: 20px;
+                    text-align: center;
+                }
+
+                .trigger-button-container button {
+                    padding: 10px 20px;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    border-radius: 6px;
+                    border: 1px solid gray;
+                    background-color: #fff;
+                }
+
+                .breadcrumb {
+                    position: static;
+                    justify-content: center;
+                }
+
+                .sprite-icons {
+                    display: flex;
+                    align-items: center;
+                }
+
+                #footer {
+                    display: none;
+                }
+            </style>
+            <!-- Contents -->
+            <main id="contents" class="smooth-wrapper">
+                <div class="smooth-content">
+                    <h1>제목</h1>
+                    <input type="text" placeholder="텍스트">
+                    <button type="button">button</button>
+                    <div class="tab-container" id="main-tabs">
+                        <ul role="tablist" class="full">
+                            <li role="presentation">
+                                <button type="button" id="main-tabs-tab-1" role="tab" aria-selected="true" aria-controls="main-tabs-panel-1" tabindex="0"> 메인 1 </button>
+                            </li>
+                            <li role="presentation">
+                                <button type="button" id="main-tabs-tab-2" role="tab" aria-selected="false" aria-controls="main-tabs-panel-2" tabindex="-1"> 메인 2 </button>
+                            </li>
+                            <li role="presentation">
+                                <button type="button" id="main-tabs-tab-3" role="tab" aria-selected="false" aria-controls="main-tabs-panel-3" tabindex="-1"> 메인 3 </button>
+                            </li>
+                        </ul>
+                        <div class="tab-panels">
+                            <div id="main-tabs-panel-1" role="tabpanel" aria-labelledby="main-tabs-tab-1" tabindex="0">
+                                <h3>메인 패널 1</h3>
+                                <p>이곳은 첫 번째 메인 탭의 콘텐츠입니다.</p>
+                            </div>
+                            <div id="main-tabs-panel-2" role="tabpanel" aria-labelledby="main-tabs-tab-2" tabindex="0" hidden>
+                                <h3>메인 패널 2</h3>
+                                <p>이 패널 안에는 또 다른 탭 컴포넌트가 있습니다.</p>
+                                <div class="tab-container" id="sub-tabs">
+                                    <ul role="tablist">
+                                        <li role="presentation">
+                                            <button type="button" id="sub-tabs-tab-1" role="tab" aria-selected="true" aria-controls="sub-tabs-panel-1" tabindex="0"> 서브 A </button>
+                                        </li>
+                                        <li role="presentation">
+                                            <button type="button" id="sub-tabs-tab-2" role="tab" aria-selected="false" aria-controls="sub-tabs-panel-2" tabindex="-1"> 서브 B </button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-panels">
+                                        <div id="sub-tabs-panel-1" role="tabpanel" aria-labelledby="sub-tabs-tab-1" tabindex="0">
+                                            <h4>서브 패널 A</h4>
+                                            <p>중첩된 탭의 첫 번째 내용입니다.</p>
+                                        </div>
+                                        <div id="sub-tabs-panel-2" role="tabpanel" aria-labelledby="sub-tabs-tab-2" tabindex="0" hidden>
+                                            <h4>서브 패널 B</h4>
+                                            <p>중첩된 탭의 두 번째 내용입니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="main-tabs-panel-3" role="tabpanel" aria-labelledby="main-tabs-tab-3" tabindex="0" hidden>
+                                <h3>메인 패널 3</h3>
+                                <p>이곳은 세 번째 메인 탭의 콘텐츠입니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trigger-button-container" style="margin: 20px;text-align: center;">
+                        <button id="openSecondTabBtn">메인 2번 탭 열기 트리거</button>
+                    </div>
+                    <!-- breadcrumb -->
+                    <nav class="breadcrumb" aria-label="브레드크럼">
+                        <ol>
+                            <li class="home">
+                                <a href="/">홈</a>
+                            </li>
+                            <li>
+                                <a href="/category">카테고리</a>
+                            </li>
+                            <li>
+                                <a href="/category/sub">서브카테고리</a>
+                            </li>
+                            <li>
+                                <span aria-current="page">현재페이지</span>
+                            </li>
+                        </ol>
+                    </nav>
+                    <!-- // breadcrumb -->
+                    <nav class="pagination" aria-label="페이지네이션">
+                        <ul>
+                            <li class="prev">
+                                <!-- 비활성화 <a href="#" tabindex="-1" aria-disabled="true"> -->
+                                <!-- 활성화 <a href="#"> -->
+                                <a href="#" tabindex="-1" aria-disabled="true">
+                                    <span class="sr-only">이전 페이지로 이동</span>이전 </a>
+                            </li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li class="active" aria-current="page"><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">6</a></li>
+                            <li><a href="#">7</a></li>
+                            <li><span class="link-dot">...</span></li>
+                            <li><a href="#">99</a></li>
+                            <li class="next">
+                                <a href="#">
+                                    <span class="sr-only">다음 페이지로 이동</span>다음 </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="accordion-container">
+                        <ul class="accordion">
+                            <li class="accordion-item active">
+                                <h3 class="accordion-header">
+                                    <button type="button" class="accordion-button" aria-expanded="true" aria-controls="accordion1-panel-1" id="accordion1-button-1"> 첫 번째 섹션 </button>
+                                </h3>
+                                <div id="accordion1-panel-1" class="accordion-panel" role="region" aria-labelledby="accordion1-button-1">
+                                    <p>여기에 첫 번째 섹션의 콘텐츠가 들어갑니다. 스크린 리더는 이 영역이 첫 번째 버튼과 연결되어 있음을 인지합니다. 키보드의 화살표 키(위/아래)로 다른 항목으로 이동할 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button type="button" class="accordion-button" aria-expanded="false" aria-controls="accordion1-panel-2" id="accordion1-button-2"> 두 번째 섹션 </button>
+                                </h3>
+                                <div id="accordion1-panel-2" class="accordion-panel" role="region" aria-labelledby="accordion1-button-2">
+                                    <p>두 번째 섹션의 콘텐츠입니다. 처음에는 숨겨져 있습니다. Enter 또는 Space 키를 눌러 패널을 열고 닫을 수 있습니다.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button type="button" class="accordion-button" aria-expanded="false" aria-controls="accordion1-panel-3" id="accordion1-button-3"> 세 번째 섹션 </button>
+                                </h3>
+                                <div id="accordion1-panel-3" class="accordion-panel" role="region" aria-labelledby="accordion1-button-3">
+                                    <p>마지막 세 번째 섹션의 내용입니다. 모든 상호작용은 ARIA(Accessible Rich Internet Applications) 표준을 준수하여 스크린 리더 사용자에게 정확한 정보를 전달합니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="sprite-icons">
+                        <i class="icons-bookmark" aria-hidden="true"></i>
+                        <i class="icons-close" aria-hidden="true"></i>
+                        <i class="icons-edit" aria-hidden="true"></i>
+                        <i class="icons-ok" aria-hidden="true"></i>
+                        <i class="icons-trash" aria-hidden="true"></i>
+                        <i class="icons-envelope" aria-hidden="true"></i>
+                        <i class="icons-globe" aria-hidden="true"></i>
+                        <i class="icons-menu" aria-hidden="true"></i>
+                        <i class="icons-network" aria-hidden="true"></i>
+                        <i class="icons-users" aria-hidden="true"></i>
+                        <i class="icons-bus" aria-hidden="true"></i>
+                        <i class="icons-graduated" aria-hidden="true"></i>
+                        <i class="icons-graduated2" aria-hidden="true"></i>
+                        <i class="icons-graduation" aria-hidden="true"></i>
+                        <i class="icons-science" aria-hidden="true"></i>
+                    </div>
+                    <input type="text">
+                    <picture>
+                        <source type="image/avif" srcset="/assets/images/test_image.avif">
+                        <source type="image/webp" srcset="/assets/images/test_image.webp">
+                        <img src="/assets/images/test_image.jpg" alt="picture text image">
+                    </picture>
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <div class="inner">
+                            <div class="brand">
+                                <a href="" class="logo"><img src="/assets/images/common/logo_straight.png" alt="AIA 프리미어파트너스"></a>
+                                <ul class="social">
+                                    <li><a href="#">인스타</a></li>
+                                    <li><a href="#">유튜브</a></li>
+                                </ul>
+                            </div>
+                            <ul class="corp">
+                                <li><a href="#">금융소비자보호 규정</a></li>
+                                <li><a href="#">금융소비자보호 내부통제규정</a></li>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">보험대리점 등록증</a></li>
+                                <li><a href="#">판매인 신원조회</a></li>
+                                <li><a href="#">부당광고 신고센터</a></li>
+                            </ul>
+                            <div class="info">
+                                <address>
+                                    <p><span>주소</span> 04511 서울특별시 중구 통일로2길 16(순화동) AIA타워 5층</p>
+                                    <p><span>대표전화</span> 02-6040-1000 <span>사업자등록번호</span> 297-86-03075</p>
+                                </address>
+                                <p class="copy">Copyright ⓒ 2023. AIA Group Limited and its subsidiaries. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- // Footer -->
+                </div>
+            </main>
+            <!-- // Contents -->
+        </div>
+        <script src="/assets/js/vendors/jquery-3.7.1.min.js"></script>
+        <script src="/assets/js/vendors/CustomEase.min.js"></script>
+        <script src="/assets/js/vendors/gsap.min.js"></script>
+        <script src="/assets/js/vendors/ScrollTrigger.min.js"></script>
+        <script src="/assets/js/vendors/ScrollSmoother.min.js"></script>
+        <script src="/assets/js/vendors/ScrollToPlugin.min.js"></script>
+        <script src="/assets/js/ui-contents.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+                console.log('페이지 스크립트');
+                // --- 예제 사용법 ---
+                // ID를 사용하여 제어하고 싶은 특정 탭 컴포넌트의 DOM 요소를 가져옵니다.
+                const mainTabsContainer = document.getElementById('main-tabs');
+                // 해당 DOM 요소에 저장된 인스턴스를 직접 가져옵니다.
+                const mainTabsInstance = mainTabsContainer.tabsInstance;
+                const triggerButton = document.getElementById('openSecondTabBtn');
+                triggerButton.addEventListener('click', () => {
+                    mainTabsInstance.openTab(1);
+                });
+            });
+        </script>
+    </body>
+
+</html>
