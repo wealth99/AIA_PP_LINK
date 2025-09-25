@@ -25,7 +25,7 @@ section.visual .bg-wrap .bg {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: url("../../assets/images/main/btype/img_visual.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_visual.png") 50% 50%/cover no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -59,7 +59,7 @@ section.visual .heading .text-2 {
 }
 
 section.sec-2 {
-    background: url("../../assets/images/main/btype/img_sec2.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_sec2.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-2 .link-group {
@@ -95,13 +95,13 @@ section.sec-2 .link-type1 a {
     height: 4rem;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
     overflow: hidden;
 }
 
 section.sec-2 .link-type1 {
     width: 100%;
-    background: url("../../assets/images/main/btype/bg_sec2.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/bg_sec2.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-2 .link-type1 p {
@@ -123,7 +123,7 @@ section.sec-2 .link-type2 p {
 }
 
 section.sec-3 {
-    background: url("../../assets/images/main/btype/img_sec3.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_sec3.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-3 .inner {
@@ -181,7 +181,7 @@ section.sec-3 .col.link-box a {
     height: 4rem;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
     overflow: hidden;
 }
 
@@ -226,7 +226,7 @@ section.sec-3 .col .diagram-box p {
 }
 
 section.sec-4 {
-    background: url("../../assets/images/main/btype/img_sec4.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_sec4.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-4 .link,
@@ -267,7 +267,7 @@ section.sec-4 .link-type1 a {
     height: 4rem;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
     overflow: hidden;
 }
 
@@ -294,7 +294,7 @@ section.sec-4 .link-type2 span {
 }
 
 section.sec-5 {
-    background: url("../../assets/images/main/btype/img_sec5.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_sec5.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-5 .link,
@@ -369,7 +369,7 @@ section.sec-4 section.sec-5 .link-type2 a {
     height: 4rem;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
     overflow: hidden;
 }
 
@@ -415,7 +415,7 @@ section.sec-6 .news-list li .date {
 
 section.sec-7 {
     text-align: center;
-    background: url("../../assets/images/main/btype/img_sec7.png") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/main/btype/img_sec7.png") 50% 50%/cover no-repeat;
 }
 
 section.sec-7 .inner {
@@ -467,7 +467,7 @@ section.sec-4 section.sec-7 .link-type2 a {
     height: 4rem;
     text-indent: 100%;
     white-space: nowrap;
-    background: url("../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
+    background: url("../../../assets/images/icons/icon_arrow_circle2.svg") 50% 50%/cover no-repeat;
     overflow: hidden;
 }
 
@@ -591,7 +591,7 @@ section.sec-4 section.sec-7 .link-type2 p {
     }
 
     section.visual .bg-wrap .bg {
-        background: url("../../assets/images/main/btype/img_visual1-mo.png") 50% 50%/cover no-repeat;
+        background: url("../../../assets/images/main/btype/img_visual1-mo.png") 50% 50%/cover no-repeat;
     }
 
     section.visual .heading {
@@ -608,7 +608,7 @@ section.sec-4 section.sec-7 .link-type2 p {
     }
 
     section.sec-2 {
-        background: url("../../assets/images/main/btype/img_sec2-mo.png") 50% 50%/cover no-repeat;
+        background: url("../../../assets/images/main/btype/img_sec2-mo.png") 50% 50%/cover no-repeat;
     }
 
     section.sec-2 .title {
@@ -627,7 +627,7 @@ section.sec-4 section.sec-7 .link-type2 p {
         max-width: 40rem;
         height: 20rem;
         padding: 3.2rem;
-        background: url("../../assets/images/main/btype/bg_sec2-mo.png") 50% 50%/cover no-repeat;
+        background: url("../../../assets/images/main/btype/bg_sec2-mo.png") 50% 50%/cover no-repeat;
     }
 
     section.sec-2 .link-type1 p {
