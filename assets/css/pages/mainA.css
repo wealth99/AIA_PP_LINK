@@ -365,7 +365,7 @@ section.goal .card-list .txt-group ul li {
 }
 
 section.partner {
-    background: url("/assets/images/main/img_partner.jpg") 50% 50%/cover no-repeat;
+    background: url("../../assets/images/main/img_partner.jpg") 50% 50%/cover no-repeat;
 }
 
 section.partner .title {
@@ -478,13 +478,13 @@ section.news .swiper-control [class*=swiper-button-] {
 
 section.news .swiper-control .swiper-button-prev {
     left: 0;
-    background: url("/assets/images/icons/icon_arrow_circle.svg") 50% 50%/cover no-repeat;
+    background: url("../../assets/images/icons/icon_arrow_circle.svg") 50% 50%/cover no-repeat;
     transform: translateY(-50%);
 }
 
 section.news .swiper-control .swiper-button-next {
     right: 0;
-    background: url("/assets/images/icons/icon_arrow_circle.svg") 50% 50%/cover no-repeat;
+    background: url("../../assets/images/icons/icon_arrow_circle.svg") 50% 50%/cover no-repeat;
     transform: translateY(-50%) rotate(180deg);
 }
 
